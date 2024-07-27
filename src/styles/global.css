@@ -1,0 +1,28 @@
+/* mcbc-react\src\styles\global.css */
+/* import tailwind css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* import antd css */
+@import 'antd/dist/antd.css';
+
+/* global styles */
+html,
+body,
+#root {
+  @apply w-full h-full m-0 p-0 bg-slate-700;
+}
+
+.app-container {
+  @apply min-h-svh flex flex-col;
+}
+
+.content-container {
+  @apply flex-grow;
+}
