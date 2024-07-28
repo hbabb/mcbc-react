@@ -1,9 +1,11 @@
 // TODO: Add code here
+import LogoSection from '../components/pages/LogoSection'
 
 function Prayer() {
   return (
     <div className="page-container">
-      <h1>Staff</h1>
+      <LogoSection />
+      <h1>Prayer</h1>
     </div>
   )
 }
