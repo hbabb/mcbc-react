@@ -1,0 +1,12 @@
+/* mcbc-react/frontend/src/styles/components/MessageFromPastor.css */
+.message-from-pastor h1 {
+  @apply text-4xl text-center font-bold font-roboto;
+}
+
+.message-from-pastor h2 {
+  @apply text-2xl font-bold font-roboto;
+}
+
+.message-from-pastor p {
+  @apply my-4 font-roboto text-justify;
+}

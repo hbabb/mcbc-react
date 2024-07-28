@@ -1,0 +1,36 @@
+/* mcbc-react\src\styles\components\Footer.css */
+/* Import TailwindCSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom footer styles */
+.footer {
+  @apply sticky bottom-0 left-0 right-0 mt-auto flex justify-between items-center p-2 bg-custom-white py-2;
+}
+
+.copyright {
+  @apply m-0 text-left text-custom-blue text-base font-roboto font-bold lg:text-2xl;
+}
+
+.construction {
+  @apply text-red-500 italic;
+}
+
+.social-icons {
+  @apply flex text-custom-blue space-x-4;
+}
+
+.social-link {
+  @apply text-inherit;
+}
+
+.social-link:hover {
+  @apply text-green-700; /* or whatever hover color you want */
+}
+
+/* @media (max-width: 767px) {
+  .footer {
+    @apply sticky bottom-0 left-0 right-0
+  }
+} */

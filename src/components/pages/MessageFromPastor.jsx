@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react'
 import useFetch from '../../hooks/useFetch'
 import { format } from 'date-fns'
 
+import '../../styles/components/MessageFromPastor.css'
+
 const renderRichText = (content) => {
   if (!content) return null
 
@@ -87,7 +89,7 @@ const MessageFromPastor = () => {
   }
 
   return (
-    <div>
+    <div className="message-from-pastor">
       <h1>A Message from the Pastor&apos;s heart</h1>
       {data?.data?.map((item) => (
         <div key={item.id}>

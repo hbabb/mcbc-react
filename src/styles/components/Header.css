@@ -1,0 +1,54 @@
+/* mcbc-react\src\styles\components\Header.css */
+/* Import TailwindCSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom header styles */
+.header {
+  @apply w-full bg-custom-white text-custom-blue py-2;
+}
+
+.navbar {
+  @apply container flex justify-between items-center;
+}
+
+.nav-container {
+  @apply flex justify-between items-center w-full;
+}
+
+.hamburger {
+  @apply md:hidden text-3xl cursor-pointer;
+}
+
+.nav-list {
+  @apply w-full flex-col md:flex-row md:flex justify-between items-center hidden;
+}
+
+.nav-item {
+  @apply mx-2 font-roboto font-extrabold text-3xl;
+}
+
+.nav-link {
+  @apply hover:text-green-600 transition duration-300;
+}
+
+/* Add media queries for responsive design */
+@media (max-width: 767px) {
+  .header {
+    @apply bg-transparent;
+  }
+
+  .hamburger {
+    @apply block;
+  }
+
+  /*     .nav-list.hidden {
+        @apply hidden;
+    }*/
+
+  .nav-list.block {
+    @apply flex bg-white/90 text-xxs p-4 border border-gray-300 rounded-2xl;
+    max-width: 150px;
+  }
+}

@@ -4,7 +4,7 @@ import logo from '../../assets/TransparentLogoIcon.svg'
 
 const Logo = () => {
   return (
-    <div className="logo-container">
+    <div className="logo-div">
       <img src={logo} alt="Logo" className="logo" />
     </div>
   )

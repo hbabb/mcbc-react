@@ -1,0 +1,16 @@
+/* mcbc-react/frontend/src/styles/pages/Home.css */
+.page-container {
+  @apply flex flex-col lg:flex-row md:h-[calc(100vh-4rem-3rem)] bg-custom-white;
+}
+
+.home-container {
+  @apply flex flex-col lg:flex-row grow w-full justify-between items-center px-4;
+}
+
+.logo-section-wrapper {
+  @apply w-full lg:w-1/3 px-1 mb-4 lg:mb-0;
+}
+
+.message-container {
+  @apply w-full lg:w-2/3 border-4 border-custom-blue rounded-3xl mx-4 p-4;
+}

@@ -1,6 +1,6 @@
 // mcbc-react\src\pages\OriginalApp.jsx
 import reactLogo from '../assets/react.svg'
-import viteLogo from '/public/vite.svg'
+import viteLogo from '/vite.svg'
 import Button from '../components/common/Button'
 
 function OriginalApp() {

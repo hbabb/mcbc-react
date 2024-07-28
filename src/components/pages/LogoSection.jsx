@@ -1,5 +1,6 @@
 // mcbc-react\src\components\pages\LogoSection.jsx
 import Logo from '../common/Logo'
+import '../../styles/components/LogoSection.css'
 
 const LogoSection = () => {
   return (
