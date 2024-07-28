@@ -6,25 +6,25 @@
 
 /* Custom logo section styles */
 .logo-section {
-    @apply flex flex-col items-center justify-center size-full bg-custom-white;
+  @apply flex flex-col items-center justify-center size-full bg-custom-white;
 }
 
 .logo-container {
-    @apply mb-0;
+  @apply mb-0;
 }
 
 .logo-div img {
-    @apply w-64 h-auto;
+  @apply w-64 h-auto;
 }
 
 .text-container {
-    @apply text-center;
+  @apply text-center;
 }
 
 .text-container h1 {
-    @apply font-allura text-4xl text-custom-blue font-medium;
+  @apply font-allura text-4xl text-custom-blue font-medium;
 }
 
 .text-container p {
-    @apply font-roboto font-medium text-custom-black tracking-[.25em];
+  @apply font-roboto font-medium text-custom-black tracking-[.25em];
 }

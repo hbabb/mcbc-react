@@ -16,7 +16,5 @@ export default {
     '\\.(css|less|sass|scss)$': 'identity-obj-proxy',
     '^/public/(.*)$': '<rootDir>/src/__mocks__/$1',
   },
-  transformIgnorePatterns: [
-    'node_modules/(?!@babel/runtime)',
-  ],
+  transformIgnorePatterns: ['node_modules/(?!@babel/runtime)'],
 }

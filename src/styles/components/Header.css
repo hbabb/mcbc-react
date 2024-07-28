@@ -34,7 +34,7 @@
 }
 
 /* Add media queries for responsive design */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .header {
     @apply bg-transparent;
   }

@@ -21,4 +21,4 @@ module.exports = {
     ],
     'subject-case': [2, 'never', ['sentence-case']],
   },
-};
+}

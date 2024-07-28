@@ -6,7 +6,7 @@
 
 /* Custom footer styles */
 .footer {
-  @apply sticky left-0 right-0 mt-auto flex justify-between items-center p-2 bg-custom-white py-2;
+  @apply sticky bottom-0 left-0 right-0 mt-auto flex justify-between items-center p-2 bg-custom-white py-2;
 }
 
 .copyright {
@@ -28,3 +28,9 @@
 .social-link:hover {
   @apply text-green-700; /* or whatever hover color you want */
 }
+
+/* @media (max-width: 767px) {
+  .footer {
+    @apply sticky bottom-0 left-0 right-0
+  }
+} */
