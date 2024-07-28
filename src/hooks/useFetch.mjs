@@ -4,7 +4,7 @@ import axios from 'axios'
 
 // Create axios instance with the base URL from the environment variable
 const axiosInstance = axios.create({
-  baseURL: process.env.VITE_API_URL || 'http://localhost:1337',
+  baseURL: 'https://mcbc-strapi-8b9bb.ondigitalocean.app/',
 })
 
 const fetcher = (url) => axiosInstance.get(url).then((res) => res.data)

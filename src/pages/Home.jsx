@@ -2,7 +2,7 @@
 import Button from '../components/common/Button'
 import LogoSection from '../components/pages/LogoSection'
 import MessageFromPastor from '../components/pages/MessageFromPastor'
-import '../styles/pages/_Home.scss'
+import '../styles/pages/Home.css'
 
 function Home() {
   return (
