@@ -42,12 +42,12 @@ coverage
 # Temporary files
 .cache
 
-# Tailwind CSS JIT generated files
-tailwind.config.js
+# # Tailwind CSS JIT generated files
+# tailwind.config.js
 
-# Production build
-vite.config.js
+# # Production build
+# vite.config.js
 
-# Lockfiles
-yarn.lock
-package-lock.json
+# # Lockfiles
+# yarn.lock
+# package-lock.json
