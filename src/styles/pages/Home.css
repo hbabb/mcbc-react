@@ -1,10 +1,10 @@
 /* mcbc-react/frontend/src/styles/pages/Home.css */
 .page-container {
-  @apply flex flex-col lg:flex-row md:h-[calc(100vh-4rem-3rem)] bg-custom-white;
+  @apply flex flex-col lg:flex-row /*md:h-[calc(100vh-4rem-3rem)]*/ bg-custom-white;
 }
 
 .home-container {
-  @apply flex flex-col lg:flex-row grow w-full justify-between items-center px-4;
+  @apply flex flex-col xl:flex-row grow w-full justify-between items-center px-4;
 }
 
 .logo-section-wrapper {
@@ -12,5 +12,5 @@
 }
 
 .message-container {
-  @apply w-full lg:w-2/3 border-4 border-custom-blue rounded-3xl mx-4 p-4;
+  @apply w-full lg:w-2/3 border-4 border-custom-blue rounded-3xl mx-4 p-4 lg:mt-20;
 }

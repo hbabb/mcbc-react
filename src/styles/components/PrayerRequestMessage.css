@@ -1,0 +1,13 @@
+/* mcbc-react/frontend/src/styles/components/PrayerRequestMessage.css */
+
+.prayer-request-message h1 {
+  @apply text-4xl text-center font-bold font-roboto;
+}
+
+.prayer-request-message h2 {
+  @apply text-2xl font-bold font-roboto;
+}
+
+.prayer-request-message p {
+  @apply my-4 font-roboto text-justify;
+}

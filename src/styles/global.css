@@ -16,7 +16,7 @@
 html,
 body,
 #root {
-  @apply min-w-full min-h-svh m-0 p-0 flex flex-col bg-slate-500;
+  @apply min-w-full min-h-svh m-0 p-0 flex flex-col /*bg-slate-500*/;
 }
 
 :root {
