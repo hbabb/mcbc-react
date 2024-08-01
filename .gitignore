@@ -33,7 +33,7 @@ build
 
 # Misc files
 NOTES.md
-TODO.md
+# TODO.md
 
 # Test coverage
 coverage
