@@ -8,11 +8,15 @@ export default {
         'custom-blue': '#262262',
         'custom-black': '#242526',
         'custom-white': '#ffffff',
+        'custom-lhblue': '#0000A8',
+        'custom-lhgray': '#C4D4DC',
       },
       fontFamily: {
         allura: ['Allura', 'cursive'],
         merriweather: ['Merriweather', 'serif'],
         roboto: ['Roboto', 'sans-serif'],
+        lobster: ['Lobster', 'serif'],
+        josefin: ['Josefin Sans', 'sans-serif'],
       },
       fontSize: {
         xxs: '.60rem',

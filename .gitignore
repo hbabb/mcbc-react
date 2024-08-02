@@ -33,7 +33,8 @@ build
 
 # Misc files
 NOTES.md
-TODO.md
+# TODO.md
+*.code-workspace
 
 # Test coverage
 coverage

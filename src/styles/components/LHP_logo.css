@@ -1,0 +1,30 @@
+/* mcbc-react\src\styles\components\LogoSection.css */
+/* Import TailwindCSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom logo section styles */
+.logo-div {
+  @apply flex items-center justify-center size-full bg-custom-white;
+}
+
+.image-container {
+  @apply mb-0;
+}
+
+.image-container img {
+  @apply w-20 h-auto;
+}
+
+.title-container {
+  @apply ml-4 text-start;
+}
+
+.title-container h1 {
+  @apply font-lobster font-normal text-4xl text-custom-lhblue;
+}
+
+.title-container p {
+  @apply font-josefin font-normal text-custom-lhblue tracking-[.5em];
+}
