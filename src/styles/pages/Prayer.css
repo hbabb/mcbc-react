@@ -1,0 +1,18 @@
+/* mcbc-react\src\styles\pages\Prayer.css */
+/* Import TailwindCSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom prayer page styles */
+.prayer-page {
+  @apply bg-gray-100;
+}
+
+.prayer-title-container {
+  @apply p-4 mb-0;
+}
+
+.prayer-logo-container {
+  @apply mb-6;
+}

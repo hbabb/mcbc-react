@@ -1,10 +1,7 @@
-// mcbc-react/frontend/src/components/pages/PrayerRequestMessage.jsx
-
 import { useEffect, useState } from 'react'
 import useFetch from '../../hooks/useFetch'
 import { format } from 'date-fns'
-
-import '../../styles/components/PrayerRequestMessage.css'
+import '../../styles/components/PrayerDirectorMessage.css'
 
 const renderRichText = (content) => {
   if (!content) return null
@@ -64,7 +61,7 @@ const renderRichText = (content) => {
 
 const PrayerRequestMessage = () => {
   const { data, isLoading, isError } = useFetch(
-    '/api/prayer-request-message?sort[0]=date:desc&pagination[limit]=1',
+    '/api/prayer-director-messages?sort[0]=published:desc&pagination[limit]=1',
   )
   const [content, setContent] = useState(null)
   const [title, setTitle] = useState('')
@@ -74,7 +71,6 @@ const PrayerRequestMessage = () => {
       console.log('Fetched data:', data) // Log the data to verify the structure
       const richTextContent = data.data[0]?.attributes?.content
       const messageTitle = data.data[0]?.attributes?.title
-      console.log('Rich Text Content:', richTextContent) // Log the structure of the content
       setContent(richTextContent)
       setTitle(messageTitle)
     }
@@ -89,13 +85,16 @@ const PrayerRequestMessage = () => {
   }
 
   return (
-    <div className="prayer-request-message">
+    <div className="prayer-director-message">
       <h1>Message from the Prayer Team</h1>
       {data?.data?.map((item) => (
         <div key={item.id}>
           <h2>{title}</h2>
           {renderRichText(content)}
-          <p>published: {format(item.attributes.date, 'dd/MM/yyyy')}</p>
+          <p>
+            Published:{' '}
+            {format(new Date(item.attributes.published), 'MMMM dd, yyyy')}
+          </p>
         </div>
       ))}
     </div>
