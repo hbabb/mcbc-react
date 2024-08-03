@@ -1,5 +1,6 @@
 // mcbc-react\src\App.jsx
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HelmetProvider } from 'react-helmet-async'
 
 import './styles/global.css'
 import About from './pages/About'
@@ -18,22 +19,24 @@ import Footer from './components/common/Footer'
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/blog" element={<BlogPost />} />
-        <Route path="/blogs" element={<Blogs />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/events" element={<Events />} />
-        <Route path="/event/:eventTitle" element={<EventPage />} />
-        <Route path="/staff" element={<Staff />} />
-        <Route path="/prayer" element={<Prayer />} />
-        <Route path="/missions" element={<Missions />} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+    <HelmetProvider context={helmetContext}>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/blog" element={<BlogPost />} />
+          <Route path="/blogs" element={<Blogs />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/event/:eventTitle" element={<EventPage />} />
+          <Route path="/staff" element={<Staff />} />
+          <Route path="/prayer" element={<Prayer />} />
+          <Route path="/missions" element={<Missions />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </HelmetProvider>
   )
 }
 
