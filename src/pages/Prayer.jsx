@@ -1,6 +1,6 @@
 // mcbc-react/frontend/src/pages/Prayer.jsx
 import React from 'react'
-import { Helmet } from 'react-helmet'
+import { SEO } from '../components/common/SEO'
 import PrayerDirectorMessage from '../components/pages/PrayerDirectorMessage'
 import LHP_logo from '../components/common/LHP_logo'
 import '../styles/pages/Prayer.css'
@@ -8,22 +8,13 @@ import '../styles/pages/Prayer.css'
 function Prayer() {
   return (
     <div className="prayer-page">
-      <Helmet>
-        <title>The Creek Prayer Ministry</title>
-        <meta
-          name="title"
-          content="The Creek - Motlow Creek Baptist Church Prayer Ministry"
-        />
-        <meta
-          name="description"
-          content="Welcome to Motlow Creek Baptist Church. We are a Southern Baptist Church located in Campobello, SC. We are a church that loves God, loves people, and loves serving our community."
-        />
-        <meta
-          name="keywords"
-          content="The Creek, Motlow Creek Baptist Church, Prayer, Prayer Ministry, Ministry, Blessings"
-        />
-        <meta name="author" content="Data Point Solutions: Rights Babb" />
-      </Helmet>
+      <SEO
+        title="Lighthouse Prayer Ministry"
+        description="Welcome to The Creek's Lighthouse Prayer Ministry. We are a community of believers who are dedicated to praying for the needs of our church, our community, and our world. Our goal is to be 'A Beacon in the Dark'."
+        name="Lighthouse Prayer Ministry"
+        type="website"
+        keywords="Lighthouse Prayer Ministry, Prayer, Community, Church, God, Jesus, Love, Hope, A Beacon in the Dark"
+      />
       <div className="prayer-title-container">
         <div className="prayer-logo-container">
           <LHP_logo />
